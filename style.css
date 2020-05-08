@@ -1,15 +1,17 @@
 /*
 	Name: 義明さんのテーマ
 	Version: 1.0
-	Template: yosiaki
+	Author: KuroonRails
+	tags: 個人
+	Description: よしあきさんのテーマです、
 */
 
-.menu li{
+.nav .menu li{
 	list-style: none;
 
 }
 
-.menu{
+.nav .menu{
 	display: flex;
 	justify-content: space-between;
 	font-size: 25px;
@@ -22,11 +24,11 @@
 .excerpt a{
 	color: #000;
 }
-.menu a{
+.nav .menu a{
 	text-decoration: none;
 	color: tan;
 }
-.menu a:hover{
+.nav .menu a:hover{
 	border-bottom: 3px solid #add8e6;
 	transition: 0.2s;
 }
@@ -196,6 +198,7 @@ body{
 .smartNav{
 	display: none;
 }
+
 #cp_toggle01{
 	display: none;
 }
@@ -247,7 +250,7 @@ body{
 	width: 852px;
 	height: 456px;
 	background-size: cover;
-	background-image: url("no.png");
+	background-image: url("cssandjs/no.png");
 }
 .url{
 	margin-bottom: 20px;
@@ -398,6 +401,10 @@ body{
 	margin-right: 10px;
 
 }
+.pagebox{
+	width: 900px;
+
+}
 @media screen and (max-width: 480px){
 	.container{
 		width: 100%;
@@ -477,7 +484,7 @@ body{
 
 }
 @media screen and (max-width: 980px){
-	.menu{
+	.nav .menu{
 		display: none;
 	}
 
@@ -505,7 +512,6 @@ body{
 
       position: fixed;
       top: 0;
-      padding-top: 80px;
       right: -100vw;
       width: 250px;
       height: 100%;
@@ -552,7 +558,7 @@ body{
     }
     /* menu toggle */
     .cp_offcm01 #cp_toggle01 ~ label {
-      background-image: url("humbergar.png");
+      background-image: url("cssandjs/humbergar.png");
       background-size: cover;
       width: 30px;
       height: 30px;

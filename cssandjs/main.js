@@ -8,5 +8,4 @@ $(function(){
 		speed: 300,
 		centerMode: true,
 	})
-
 })

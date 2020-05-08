@@ -24,7 +24,6 @@
 						<p><?php the_content(); ?></p>
 					</div>
 
-
 				<?php endwhile; endif; ?>
 			</div>
 
