@@ -1,20 +1,17 @@
 <?php
-	$arg = array(
-		'posts_per_page' => 4,
+	$cat_post = get_posts(array(
+		'post_type' => 'post',
+		'category' => 1,
+		'category' => 'srag',
+		'posts_per_page' => 6,
 		'orderby' => 'date',
-		'order' => 'DESC',
-		'category_name' => 'wp-customize'
-	);
-	$posts = get_posts($arg);
-	if($posts): ?>
-		<ul>
-			<?php
-			foreach($posts as $post) 
-				setup_postdata($post); ?>
-			<li><?php the_time('Y.m.d'); ?><?php the_title(); ?></li>
-		<?php endforeach; ?>
-	</ul>
-	<?php
-endif;
-wp_reset_postdata(); ?>
+		'order' => 'DESC'
+		));
+	global $post;
+	if($cat_posts): foreach($cat_posts as $post): serup_postdata($post); ?>
+
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	<?php endforeach; endif; wp_reset_postdata(); ?>
 ?>
+
+dwada
