@@ -10,7 +10,9 @@
 	list-style: none;
 
 }
-
+.menu-mymenu-container{
+	padding-top: 4em;
+}
 .nav .menu{
 	display: flex;
 	justify-content: space-between;
@@ -30,7 +32,7 @@
 }
 .nav .menu a:hover{
 	border-bottom: 3px solid #add8e6;
-	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 #yosiakiText{
 	margin-top: 30px;
@@ -44,12 +46,13 @@
 	width: 850px;
 }
 body{
-	font-family: 游ゴシック;
+	font-family: 游ゴシック,"Yu Gothic", YuGothic, Meiryo, sans-serif;
 }
 
 .scrollingBox{
 	margin-bottom: 100px;
 	display: flex;
+	display: -ms-flex;
 	justify-content: center;
 }
 .postAllBox{
@@ -119,6 +122,9 @@ body{
 	margin-bottom: 10px;
 	text-align: right;
 }
+.category a{
+	color: #1e90ff;
+}
 .scrollingBoxCenter img{
 	width: 100%;
 	height: 450px;
@@ -154,6 +160,22 @@ body{
 }
 .newPostBox{
 	background-color: #deb887;
+}
+.categoryText li{
+	list-style: none;
+}
+.categoryText{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 50px;
+	max-width: 900px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.categoryText a{
+	text-decoration: none;
+	color: #000;
 }
 
 .yosiakiBox{
@@ -202,11 +224,6 @@ body{
 #cp_toggle01{
 	display: none;
 }
-.imageshow img{
-	width: 852px;
-	height: 456px;
-	background-size: cover;
-}
 
 .permalinkscroll{
 	text-decoration: none;
@@ -220,6 +237,7 @@ body{
 	font-size: 35px;
 	margin-bottom: 30px;
 	max-width: 720px;
+	word-wrap: break-word;
 }
 .showBox h1{
 	font-size: 25px;
@@ -242,15 +260,14 @@ body{
 .postBox{
 	max-width: 300px;
 	padding-right: 10px;
+	color: #000;	
 }
 .postBox p{
 	text-align: center;
 }
 .noimageshow{
-	width: 852px;
-	height: 456px;
-	background-size: cover;
-	background-image: url("cssandjs/no.png");
+	width: 100%;
+	height: 100%;
 }
 .url{
 	margin-bottom: 20px;
@@ -272,70 +289,7 @@ body{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-#submit{
-	font-weight: bold;
-	color: #fff;
-	background-color: #4682b4;
-	border-style: none;
-	padding: 5px;
-	font-size: 18px;
 
-	border-radius: 10px;
-}
-#submit:hover{
-	transition: 1s;
-	background-color: #1e90ff;
-	cursor: pointer;
-	opacity: 0.8;
-}
-#commentform{
-	margin-top: 50px;
-}
-.logged-in-as{
-	display: none;
-}
-#comment{
-	resize: none;
-	width: 100%;
-}
-.comment-author{
-	display: flex;
-}
-.form-submit{
-
-	text-align: center;
-}
-.comment-body{
-	list-style: none;
-}
-.comment-form-comment label{
-	display: none;
-}
-#comments-list{
-	margin-top: 50px;
-}
-.vcard{
-	margin-bottom: 20px;
-}
-.says{
-	line-height: 50px;
-}
-.fn a{
-	color: #1e90ff;
-	line-height: 50px;
-}
-.fn a:hover{
-	opacity: 1;
-}
-.commentBox{
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 20px;
-}
-.comment-body p{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 10%;
-}
 .fn{
 	margin-bottom: 20px;
 }
@@ -409,7 +363,16 @@ body{
 	.container{
 		width: 100%;
 	}
-
+	.singleTheTitle{
+		font-size: 23px;
+		max-width: 70%;
+	}
+	.category{
+		max-width: 100%;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
 	.menu{
 		max-width: 100%;
 	}
@@ -432,9 +395,7 @@ body{
 		font-size: 20px;
 	}
 
-	.postAllAndFooterBox{
-		display: block;
-	}
+
 	.container{
 		padding-right: 0;
 		padding-left: 0px;
@@ -445,6 +406,9 @@ body{
 	.postBox{
 		padding: 0;
 		max-width: 100%;
+	}
+	.postBox img{
+		width: 100%;
 	}
 	.postBox h2{
 		max-width: 100%;
@@ -460,9 +424,7 @@ body{
 		margin-left: 0;
 
 	}
-	.postAllAndFooterBox{
-		max-width: 100%;
-	}
+
 	.postTextBox{
 		width: 100%;
 	}
@@ -472,15 +434,10 @@ body{
 	.showBox{
 		margin: 0;
 	}
-	.imageshow img{
-		width: 100%;
-		height: 100%;
-	}
 
     .bottomMenuLink{
         font-size: 13px;
     }
-
 
 }
 @media screen and (max-width: 980px){
@@ -491,7 +448,13 @@ body{
 	.smartNav{
 		display: block;
 	}
-
+	.postAllAndFooterBox{
+		display: block;
+		max-width: 100%;
+	}
+		.rightMenu{
+		width: 100%;
+	}
    ol, ul {
 
       list-style: none;
@@ -604,3 +567,4 @@ body{
 
 
 }
+

@@ -43,7 +43,8 @@
 							<?php if (has_post_thumbnail()) : ?>
 
 								<!-- もしサムネイル画像があったら -->
-								<?php the_post_thumbnail('thumbnail'); ?>
+
+								<?php the_post_thumbnail('thumbnail', array('class' => 'noimage')); ?>
 							<?php else: ?>
 								<img src="<?php bloginfo('template_directory')?>/cssandjs/no.png" class="noimage">
 							<?php endif; ?>

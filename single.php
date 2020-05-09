@@ -1,4 +1,5 @@
-<?php  get_header(); ?>
+<?php get_header(); ?>
+
 	<div class="postAllAndFooterBox">
 		<main>
 			<p class="category"><?php the_category('/') ?></p>
@@ -12,12 +13,9 @@
 			<div class="postAllBox">
 				<?php if(have_posts()): while(have_posts()): the_post(); ?>
 						<?php if (has_post_thumbnail()) : ?>
-							<div class="imageshow">
-								<?php the_post_thumbnail('thumbnail'); ?>
-							</div>
+							<?php the_post_thumbnail('thumbnail', array('class' => 'noimageshow')); ?>
 						<?php else: ?>
-							<div class="noimageshow">
-							</div>
+							<img src="<?php bloginfo('template_directory')?>/cssandjs/no.png" class="noimageshow">
 						<?php endif; ?>
 
 					<div class="showBox">

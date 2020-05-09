@@ -2,9 +2,7 @@
 <div class="postAllAndFooterBox">
 	<main>
 		<h1 class="categoryText">
-			<?php foreach((get_the_category()) as $cat): ?>
-				<?php echo $cat->cat_name . ''; ?>
-			<?php endforeach; ?>
+			<?php wp_get_archives(); ?>
 		</h1>
 		<div class="postAllBox">
 			
