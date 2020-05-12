@@ -3,6 +3,7 @@
 	<div class="postAllAndFooterBox">
 		<main>
 			<p class="category"><?php the_category('/') ?></p>
+			<p class="tags"><?php the_tags(); ?></p>
 				<div class="singleTimeBox">
 					<h1 class="singleTheTitle"><?php echo esc_html(get_the_title()); ?></h1>
 					<time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="time">

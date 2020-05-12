@@ -17,7 +17,7 @@
 							<div class="scrollingBoxCenter">
 								<?php the_post_thumbnail('humbnail'); ?>
 								<h2>
-									<?php the_short_title(15);  ?>
+									<?php the_short_title(10);  ?>
 								</h2>
 							</div>
 						</a>
@@ -25,7 +25,7 @@
 						<a href="<?php the_permalink(); ?>" class="permalinkscroll">
 							<div class="scrollingBoxCenter">
 								<img src="<?php bloginfo('template_directory')?>/cssandjs/no.png">
-								<h2><?php the_short_title(15); ?></h2>
+								<h2><?php the_short_title(10); ?></h2>
 							</div>
 						</a>:
 					<?php endif; ?>
@@ -48,7 +48,7 @@
 							<?php else: ?>
 								<img src="<?php bloginfo('template_directory')?>/cssandjs/no.png" class="noimage">
 							<?php endif; ?>
-							<h2><?php the_short_title(15); ?></h2>
+							<h2><?php the_short_title(10); ?></h2>
 							<p class="excerpt">
 								<?php the_excerpt(); ?>
 							</p><br>

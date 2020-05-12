@@ -1,3 +1,8 @@
+<?php
+	/*
+		Template Name: プロフィール(page.php)
+	*/
+?>
 <?php  get_header(); ?>
 	<div class="postAllAndFooterBox">
 		<div class="pagebox">

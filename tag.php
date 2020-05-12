@@ -1,11 +1,13 @@
 <?php get_header(); ?>
+
 <div class="postAllAndFooterBox">
 	<main>
-		<h1 class="categoryText">
-			<?php wp_get_archives(); ?>
-		</h1>
+		<div class="tagBox">
+			<?php foreach((get_the_tags()) as $cat): ?>
+				<?php echo $cat->name . ''; ?>
+			<?php endforeach; ?>
+		</div>
 		<div class="postAllBox">
-			
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
 
 				<a href="<?php the_permalink(); ?>">
