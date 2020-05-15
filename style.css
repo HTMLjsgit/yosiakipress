@@ -1,8 +1,7 @@
 /*
-	Name: 義明さんのテーマ
+	Theme Name: 義明さんのテーマ
 	Version: 1.0
 	Author: KuroonRails
-	tags: 個人
 	Description: よしあきさんのテーマです、
 */
 
@@ -18,6 +17,47 @@
 	justify-content: space-between;
 	font-size: 25px;
 
+}
+#comment{
+	resize: none;
+	width: 95%;
+	height: 150px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+#comments{
+	text-align: center;
+	margin-top: 50px;
+}
+
+#submit{
+	width: 250px;
+	height: 40px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #117ec6;
+	border-style: none;
+	font-family: 游ゴシック;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+label[for="comment"]{
+	display: none;
+}
+#comment::placeholder{
+	content: "入力！";
+}
+.form-submit{
+	text-align: center;
+
+}
+#submit:hover{
+	cursor: pointer;
 }
 .tags{
 	text-align: right;
@@ -305,13 +345,48 @@ body{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
 .fn{
 	margin-bottom: 20px;
 }
-.reply{
+.url{
+	text-decoration: none;
+	color:#1e90ff;
+}
+.url:hover{
+	text-decoration: underline;
+}
+.comment-form-author{
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+#reply-title{
+	margin-bottom: 20px;
+}
+.comment-reply-link{
+	background-color: ;
+}
+.comment-form-url{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.comment-form-email{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.comment-meta{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+ol.comments-list{
+	padding-left: 20px;
+}
+.reply{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.reply a{
+	text-decoration: none;
 }
 .widget h3{
 	padding-top: 10px;
@@ -410,7 +485,10 @@ body{
 	.slick-slide div h2{
 		font-size: 20px;
 	}
-
+	#submit{
+		width: 100px;
+		font-size: 15px;
+	}
 
 	.container{
 		padding-right: 0;

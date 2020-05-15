@@ -1,7 +1,6 @@
 <?php
 	add_theme_support('post-thumbnails');
-	add_filter('preprocess_comment', 'my_comment_tag_disable');
-	remove_filter('comment_text', 'make_clickable', 9);
+	// remove_filter('comment_text', 'make_clickable', 9);
 
 	function the_short_title($length = 10){
 		$ret = get_the_title();
@@ -9,7 +8,7 @@
 			$ret = mb_substr($ret, 0, $length) . '...';
 		}
 
-		echo esc_html($ret);
+		echo $ret;
 	}
 	function my_excerpt_length($length){
 		return 10;

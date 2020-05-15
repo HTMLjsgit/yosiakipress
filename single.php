@@ -25,7 +25,7 @@
 
 				<?php endwhile; endif; ?>
 			</div>
-
+			<?php comments_template(); ?>
 		</main>
 
 <?php get_sidebar(); ?>
